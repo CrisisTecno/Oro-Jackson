@@ -34,13 +34,26 @@ z-index: -1;
 
 .my-li{
   color: aliceblue;
- 
+  :hover{
+    color: rgb(63, 110, 196);
+    
+  }
+  @media (max-width: 500px) {
+    margin: 0px 0px 3vh  0vh;
+    
+  }
 }
 #header{
   list-style: none; 
  
-  display: flex ;
+  display: flex;
   justify-content: space-evenly;
+  @media (max-width: 500px) {
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
 }
 .my-a{
   text-decoration: none; 
@@ -49,9 +62,17 @@ z-index: -1;
   border: solid 2px aliceblue;
   border-top-right-radius: 25%;
   border-bottom-left-radius: 25%;
+  @media (max-width: 682px) {
+    padding: 0px 1vw 0px 1vw;
+  }
+  
+  :hover{
+    border: rgb(63, 110, 196);
+  }
 }
 #iframe{
  margin: 4vw;
   width: 90%;
   height: 90%;
+  border: none;
 }

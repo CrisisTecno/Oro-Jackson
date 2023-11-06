@@ -38,11 +38,25 @@ body::before {
 .my-li {
   color: aliceblue;
 }
+.my-li :hover {
+  color: rgb(63, 110, 196);
+}
+@media (max-width: 500px) {
+  .my-li {
+    margin: 0px 0px 3vh 0vh;
+  }
+}
 
 #header {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  #header {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .my-a {
@@ -53,9 +67,18 @@ body::before {
   border-top-right-radius: 25%;
   border-bottom-left-radius: 25%;
 }
+@media (max-width: 682px) {
+  .my-a {
+    padding: 0px 1vw 0px 1vw;
+  }
+}
+.my-a :hover {
+  border: rgb(63, 110, 196);
+}
 
 #iframe {
   margin: 4vw;
   width: 90%;
   height: 90%;
+  border: none;
 }/*# sourceMappingURL=index.css.map */
