@@ -22,6 +22,7 @@ Comienza a utilizar Oro-Jackson para mejorar la organización y colaboración en
 3. Yulios
 4. Jessiel@
 5. eseCristhian
+6. Billy
 
 ## Licencia
 Este proyecto no tiene una licencia específica. Si deseas utilizarlo, contáctanos para obtener más información.
