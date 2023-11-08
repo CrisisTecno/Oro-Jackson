@@ -16,8 +16,12 @@ Oro-Jackson es un proyecto que brindav a tu equipo un espacio para organizar ide
 
 Comienza a utilizar Oro-Jackson para mejorar la organización y colaboración en tu equipo.
 
-## Autor
-[Tu Nombre]
+## Autores
+1. sUPER pao
+2. maria
+3. Yulios
+4. Jessiel@
+5. eseCristhian
 
 ## Licencia
 Este proyecto no tiene una licencia específica. Si deseas utilizarlo, contáctanos para obtener más información.
