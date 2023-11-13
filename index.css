@@ -1,66 +1,8 @@
 @charset "UTF-8";
-.h1 {
-  text-align: center;
-  background-color: transparent;
-  font-size: xx-large;
-  color: aliceblue;
-  padding: 3vh 0 3vh 0;
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-}
-
-.h1.check, .my-a.check {
-  color: aqua;
-}
-
-.my-li {
-  color: aliceblue;
-}
-.my-li :hover {
-  color: rgb(63, 110, 196);
-}
-@media (max-width: 500px) {
-  .my-li {
-    margin: 0px 0px 3vh 0vh;
-  }
-}
-
-.my-a {
-  text-decoration: none;
-  color: inherit;
-  padding: 0px 4vw 0px 4vw;
-  border: solid 2px aliceblue;
-  border-top-right-radius: 25%;
-  border-bottom-left-radius: 25%;
-}
-@media (max-width: 682px) {
-  .my-a {
-    padding: 0px 1vw 0px 1vw;
-  }
-}
-.my-a :hover {
-  border: rgb(63, 110, 196);
-}
-
-ul {
-  margin: 0;
-  list-style: none;
-  display: flex;
-  justify-content: space-evenly;
-}
-@media (max-width: 500px) {
-  ul {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
 body {
   position: relative;
-  font-family: "Roboto Mono Variable";
+  font-family: sans-serif;
   width: 100%;
-  background-color: aliceblue;
   margin: 0;
   padding: 0;
 }
@@ -87,6 +29,7 @@ body::before {
   font-size: xx-large;
   color: aliceblue;
   padding: 3vh 0 3vh 0;
+  font-weight: bold;
   display: flex;
   justify-content: center;
   text-decoration: none;
@@ -136,4 +79,61 @@ ul {
     flex-direction: column;
     align-items: center;
   }
+}
+
+#uth {
+  display: block;
+}
+#uth .about {
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: xx-large;
+  margin-bottom: -4vh;
+}
+#uth .about .h2-1 {
+  font-weight: bold;
+  color: #361f7b;
+  margin-right: 15px;
+}
+#uth .dvi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#uth .dvi .divider {
+  display: flex;
+  justify-content: center;
+  width: 30vw;
+  height: 0.5vh;
+  background-color: aliceblue;
+}
+#uth .dvi .icon {
+  margin: 0px 15px 0 15px;
+}
+#uth .about-1 {
+  margin: 2vh 5vw 2vh 5vw;
+}
+#uth #inter {
+  justify-content: center;
+  align-items: center;
+  margin: 4vh 5vw 2vh 5vw;
+}
+#uth #inter .integrantes {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+#uth #inter .integrantes .image {
+  width: 200px;
+  height: 200px;
+  border: solid #361f7b 1vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  border-radius: 50%;
+  padding: 1vw;
+}
+#uth #inter .integrantes div {
+  text-align: center;
+  margin-right: 5vw;
 }/*# sourceMappingURL=index.css.map */

@@ -7,7 +7,7 @@ export function NabBar(){
     const home =document.createElement("a");
     
     home.classList.add("h1");
-    home.textContent="Bienvenido Al Oro Jackson";
+    home.textContent="BIENVENIDO AL ORO JACKSON";
     home.onclick=function(){
         window.location.href=`http://${window.location.host}/index.html`;
     }
@@ -35,4 +35,4 @@ export function NabBar(){
     }
     console.log(window.location.pathname.substring(1));
     header.appendChild(enlaces);
-    }
+}

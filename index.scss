@@ -1,9 +1,8 @@
-@use './navbar.scss' as navbar;
+@use './components/navbar/navbar.scss' as navbar;
 body{
   position: relative;
-  font-family: 'Roboto Mono Variable';
+  font-family: sans-serif;
   width: 100%;
-  background-color: aliceblue;
   margin: 0;
   padding: 0;	
   }
@@ -39,4 +38,65 @@ body{
   }
 ul{
   @include navbar.lista-estilo;
+}
+
+#uth{
+  display: block;
+  .about{
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: xx-large;
+    .h2-1{
+      font-weight: bold;
+      color:#361f7b ;
+      margin-right: 15px;
+    }
+    margin-bottom: -4vh;
+  }
+  .dvi{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .divider{
+    display: flex;
+    justify-content: center;
+    width: 30vw;
+    height: 0.5vh;
+    background-color: aliceblue;
+    }
+    .icon{
+      margin: 0px 15px 0 15px;
+    }
+  }
+  .about-1{
+    margin: 2vh 5vw 2vh 5vw;
+  }
+  #inter{
+    justify-content: center;
+    align-items: center;
+    margin: 4vh 5vw 2vh 5vw;
+    .integrantes{
+      justify-content: center;
+    align-items: center;
+      display: flex;
+      .image{
+        width: 200px;
+        height: 200px;
+        border: solid #361f7b  1vh;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        border-radius: 50%;
+        padding: 1vw;
+    }
+    div{
+      text-align: center;
+      margin-right: 5vw;
+    }
+    }
+      
+    
+      
+  }
+
 }
