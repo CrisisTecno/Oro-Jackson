@@ -1,78 +1,42 @@
-.h1{
-  text-align: center;
-  background-color: transparent;
-  margin-top: 5vh;
-  color: aliceblue;
-}
-
-*{
-  /* border: solid 1px red;   */
-}
+@use './navbar.scss' as navbar;
 body{
-position: relative;
-font-family: 'Roboto Mono Variable';
-width: 100%;
-background-color: aliceblue;
-margin: 0;
-padding: 0;	
+  position: relative;
+  font-family: 'Roboto Mono Variable';
+  width: 100%;
+  background-color: aliceblue;
+  margin: 0;
+  padding: 0;	
+  }
+  body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  bottom: 0;
+  background-position: center;
+    background-attachment: fixed;
+  background-size:cover;
+  background-image: url("./public/assets/back1.jpg");
+  filter: brightness(0.1); /* Ajusta el valor según tus preferencias para reducir el brillo */
+  z-index: -1;
+  }
+  
+
+.h1{
+@include navbar.title;
 }
-body::before {
-content: "";
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
-width: 100%;
-bottom: 0;
-background-position: center;
-  background-attachment: fixed;
-background-size:cover;
-background-image: url("./public/assets/back1.jpg");
-filter: brightness(0.1); /* Ajusta el valor según tus preferencias para reducir el brillo */
-z-index: -1;
+.h1.check,.my-a.check {
+  color: aqua;
 }
 
 .my-li{
-  color: aliceblue;
-  :hover{
-    color: rgb(63, 110, 196);
-    
-  }
-  @media (max-width: 500px) {
-    margin: 0px 0px 3vh  0vh;
-    
-  }
-}
-#header{
-  list-style: none; 
- 
-  display: flex;
-  justify-content: space-evenly;
-  @media (max-width: 500px) {
-    flex-direction: column;
-    align-items: center;
-    
-  }
-
+  @include navbar.parali;
 }
 .my-a{
-  text-decoration: none; 
-  color: inherit;
-  padding: 0px 4vw 0px 4vw;
-  border: solid 2px aliceblue;
-  border-top-right-radius: 25%;
-  border-bottom-left-radius: 25%;
-  @media (max-width: 682px) {
-    padding: 0px 1vw 0px 1vw;
+  @include navbar.paraa;
   }
-  
-  :hover{
-    border: rgb(63, 110, 196);
-  }
-}
-#iframe{
- margin: 4vw;
-  width: 90%;
-  height: 90%;
-  border: none;
+ul{
+  @include navbar.lista-estilo;
 }

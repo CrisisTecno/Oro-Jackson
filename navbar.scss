@@ -1,0 +1,52 @@
+
+
+@mixin parali{
+    color: aliceblue;
+    :hover{
+      color: rgb(63, 110, 196);
+      
+    }
+    @media (max-width: 500px) {
+      margin: 0px 0px 3vh  0vh;
+      
+    }
+  }
+  @mixin paraa{
+    text-decoration: none; 
+    color: inherit;
+    padding: 0px 4vw 0px 4vw;
+    border: solid 2px aliceblue;
+    border-top-right-radius: 25%;
+    border-bottom-left-radius: 25%;
+    @media (max-width: 682px) {
+      padding: 0px 1vw 0px 1vw;
+    }
+    :hover{
+      border: rgb(63, 110, 196);
+    }
+  }
+  
+  @mixin lista-estilo {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    @media (max-width: 500px) {
+      flex-direction: column;
+      align-items: center;
+      
+    }
+  }
+  @mixin title{
+    
+    text-align: center;
+    background-color: transparent;
+    font-size: xx-large;
+    color: aliceblue;
+    padding: 3vh 0 3vh 0;
+    display: flex;
+    justify-content: center;
+  text-decoration: none;
+  }
+
+ 
